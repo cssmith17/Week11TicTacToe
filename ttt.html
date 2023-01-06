@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link href="ttt.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
+</head>
+<body>
+    <h1 class="display-2">Tic-Tac-Toe</h1>
+    <div id="board">
+        <div data-index="1" class="square right-border bottom-border"></div>
+        <div data-index="2" class="square right-border bottom-border"></div>
+        <div data-index="3" class="square bottom-border"></div>
+        <div data-index="4" class="square right-border bottom-border"></div>
+        <div data-index="5" class="square right-border bottom-border"></div>
+        <div data-index="6" class="square bottom-border"></div>
+        <div data-index="7" class="square right-border"></div>
+        <div data-index="8" class="square right-border"></div>
+        <div data-index="9" class="square"></div>
+    </div>
+    <h2 class="visible" id="turn">X's Turn</h2>
+    <div id="game-over" class="hidden">
+        <div class="alert alert-success" id="game-over-text" role="alert">X Wins!</div>
+    <button class="btn btn-rounded btn-success" id="reset">Reset</button>
+    </div>
+
+
+    <script src="ttt.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
